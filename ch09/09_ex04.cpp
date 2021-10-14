@@ -19,7 +19,7 @@ private:
 };
 
 Person::Person()
-	:name("±è¼öÇÑ¹«"), age(120)
+	:name("ê¹€ìˆ˜í•œë¬´"), age(120)
 {
 	;
 }
@@ -33,8 +33,8 @@ Person::Person(const string name, const int age)
 string Person::getName()
 {
 	//return this->name;
-	return name; // ÇØ´çÅ¬·¡½ºÀÇ ¸â¹öÀÎÁÙ ¾Ï
-	// ¸Å°³º¯¼ö¿¡µµ ¾ø°í ÇÔ¼ö¿¡¼­µµ ¼±¾ğÇÏÁö ¾Ê¾Ò±â ¶§¹®
+	return name; // í•´ë‹¹í´ë˜ìŠ¤ì˜ ë©¤ë²„ì¸ì¤„ ì•”
+	// ë§¤ê°œë³€ìˆ˜ì—ë„ ì—†ê³  í•¨ìˆ˜ì—ì„œë„ ì„ ì–¸í•˜ì§€ ì•Šì•˜ê¸° ë•Œë¬¸
 }
 
 int Person::getAge()
@@ -46,13 +46,13 @@ void Person::setName(const string name)
 {
 	this->name = name;
 	// Person::name = name;
-	// ¾Õ name : privateÀÇ name, µÚ name : ¸Å°³º¯¼öÀÇ name
+	// ì• name : privateì˜ name, ë’¤ name : ë§¤ê°œë³€ìˆ˜ì˜ name
 }
 
 void Person::setAge(const int age)
 {
 	this->age = age;
-	// ÇØ´ç Å¬·¡½ºÀÇ age¿¡ ¸Å°³º¯¼ö¸¦ Àü´ŞÇÏ´Â ageÇÒ´ç
+	// í•´ë‹¹ í´ë˜ìŠ¤ì˜ ageì— ë§¤ê°œë³€ìˆ˜ë¥¼ ì „ë‹¬í•˜ëŠ” ageí• ë‹¹
 }
 
 void TEST(Person& p)
@@ -60,33 +60,33 @@ void TEST(Person& p)
 	cout << p.name << endl;
 	cout << p.age << endl;
 	p.setAge(23);
-	p.setName("ÀÌ»ç¶û");
+	p.setName("ì´ì‚¬ë‘");
 }
 
 int main()
 {
 	Person p1;
 
-	cout << "ÀÌ¸§ : " << p1.getName() << endl;
-	cout << "³ªÀÌ : " << p1.getAge() << endl;
-	// ¸Å°³º¯¼ö¸¦ Àü´ŞÇÏÁö ¾Ê¾Ò±â ¶§¹®¿¡ ÃÊ±âÈ­ °ªÀÌ Ãâ·ÂµÊ
+	cout << "ì´ë¦„ : " << p1.getName() << endl;
+	cout << "ë‚˜ì´ : " << p1.getAge() << endl;
+	// ë§¤ê°œë³€ìˆ˜ë¥¼ ì „ë‹¬í•˜ì§€ ì•Šì•˜ê¸° ë•Œë¬¸ì— ì´ˆê¸°í™” ê°’ì´ ì¶œë ¥ë¨
 
-	p1.setName("Ã¤Ä¡¼ö");
+	p1.setName("ì±„ì¹˜ìˆ˜");
 	p1.setAge(19);
 
-	cout << "ÀÌ¸§ : " << p1.getName() << endl;
-	cout << "³ªÀÌ : " << p1.getAge() << endl;
+	cout << "ì´ë¦„ : " << p1.getName() << endl;
+	cout << "ë‚˜ì´ : " << p1.getAge() << endl;
 
-	Person p2("Á¤´ë¸¸", 18);
-	cout << "ÀÌ¸§ : " << p2.getName() << endl;
-	cout << "³ªÀÌ : " << p2.getAge() << endl;
+	Person p2("ì •ëŒ€ë§Œ", 18);
+	cout << "ì´ë¦„ : " << p2.getName() << endl;
+	cout << "ë‚˜ì´ : " << p2.getAge() << endl;
 
 	cout << "**************" << endl;
 
 	TEST(p2);
 
-	cout << "ÀÌ¸§ : " << p2.getName() << endl;
-	cout << "³ªÀÌ : " << p2.getAge() << endl;
+	cout << "ì´ë¦„ : " << p2.getName() << endl;
+	cout << "ë‚˜ì´ : " << p2.getAge() << endl;
 
 	return 0;
 }
