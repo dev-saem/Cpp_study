@@ -3,7 +3,7 @@ using namespace std;
 
 class SaleInf
 {
-	friend int CheckTax2(SaleInf& Obj);	// ÇÁ·»µå ÇÔ¼ö ¼±¾ğ
+	friend int CheckTax2(SaleInf& Obj);	// í”„ë Œë“œ í•¨ìˆ˜ ì„ ì–¸
 
 public:
 	SaleInf(const double Income);
@@ -14,12 +14,12 @@ private:
 	double Tax;
 };
 
-SaleInf::SaleInf(const double Income)	// »ı¼ºÀÚ
+SaleInf::SaleInf(const double Income)	// ìƒì„±ì
 {
 	this->Income = Income;
 }
 
-double SaleInf::getTax()	// ¸â¹öÇÔ¼ö Á¤ÀÇ
+double SaleInf::getTax()	// ë©¤ë²„í•¨ìˆ˜ ì •ì˜
 {
 	return Tax;
 }
@@ -31,7 +31,7 @@ int CheckTax2(SaleInf& Obj)
 	Obj.Tax = Obj.Income * 0.03;
 	return 1;
 }
-// SaleInf:: ¸¦ ÂüÁ¶ÇÏÁö ¾Ê¾Æµµ ¿¡·¯x, private¸â¹ö ÂüÁ¶ °¡´É -> friend ÇÔ¼öÀÌ±â ¶§¹®
+// SaleInf:: ë¥¼ ì°¸ì¡°í•˜ì§€ ì•Šì•„ë„ ì—ëŸ¬x, privateë©¤ë²„ ì°¸ì¡° ê°€ëŠ¥ -> friend í•¨ìˆ˜ì´ê¸° ë•Œë¬¸
 
 
 int main()
@@ -39,7 +39,7 @@ int main()
 	SaleInf s1(20.4);
 	CheckTax2(s1);
 
-	cout << "¼¼±İ : " << s1.getTax() << endl;
+	cout << "ì„¸ê¸ˆ : " << s1.getTax() << endl;
 
 	return 0;
 }
