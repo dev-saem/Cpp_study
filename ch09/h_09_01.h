@@ -7,8 +7,8 @@ using namespace std;
 class Student
 {
 public:
-	Student();	// »ı¼ºÀÚ - °´Ã¼ »ı¼º½Ã ¸Å°³º¯¼ö°¡ ¾øÀ» ¶§ ÀÚµ¿ È£Ãâ
-	Student(const int s1, const int s2, const int s3);	// »ı¼ºÀÚ - °´Ã¼ »ı¼º½Ã ¼¼°³ÀÇ Á¤¼öÇü ¸Å°³º¯¼ö°¡ ÀÖÀ» ¶§ ÀÚµ¿È£Ãâ
+	Student();	// ìƒì„±ì - ê°ì²´ ìƒì„±ì‹œ ë§¤ê°œë³€ìˆ˜ê°€ ì—†ì„ ë•Œ ìë™ í˜¸ì¶œ
+	Student(const int s1, const int s2, const int s3);	// ìƒì„±ì - ê°ì²´ ìƒì„±ì‹œ ì„¸ê°œì˜ ì •ìˆ˜í˜• ë§¤ê°œë³€ìˆ˜ê°€ ìˆì„ ë•Œ ìë™í˜¸ì¶œ
 	void setScore(const int s1, const int s2, const int s3);
 	void ShowScore();
 	void SumAverage();
