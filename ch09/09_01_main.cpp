@@ -2,8 +2,8 @@
 
 int main()
 {
-	Student p1;	// °´Ã¼ »ý¼º½Ã »ý¼ºÀÚ ÀÚµ¿ È£Ãâ, ¸Å°³º¯¼ö ¾ø´Â »ý¼ºÀÚ È£Ãâ
-	p1.ShowScore();	// ÃÊ±âÈ­ °ªÀÌ Ãâ·Â
+	Student p1;	// ê°ì²´ ìƒì„±ì‹œ ìƒì„±ìž ìžë™ í˜¸ì¶œ, ë§¤ê°œë³€ìˆ˜ ì—†ëŠ” ìƒì„±ìž í˜¸ì¶œ
+	p1.ShowScore();	// ì´ˆê¸°í™” ê°’ì´ ì¶œë ¥
 
 	cout << "***************************" << endl;
 
@@ -13,7 +13,7 @@ int main()
 
 	cout << "***************************" << endl;
 
-	Student p2(80, 56, 100);	// ¸Å°³º¯¼ö°¡ ÀÖ´Â »ý¼ºÀÚ È£Ãâ
+	Student p2(80, 56, 100);	// ë§¤ê°œë³€ìˆ˜ê°€ ìžˆëŠ” ìƒì„±ìž í˜¸ì¶œ
 	p2.SumAverage();
 	p2.ShowScore();
 
