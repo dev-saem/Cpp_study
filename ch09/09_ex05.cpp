@@ -20,7 +20,7 @@ private:
 };
 
 Person::Person()
-	:name("±è¼öÇÑ¹«"), age(120)
+	:name("ê¹€ìˆ˜í•œë¬´"), age(120)
 {
 	;
 }
@@ -34,8 +34,8 @@ Person::Person(const string name, const int age)
 string Person::getName()
 {
 	//return this->name;
-	return name; // ÇØ´çÅ¬·¡½ºÀÇ ¸â¹öÀÎÁÙ ¾Ï
-	// ¸Å°³º¯¼ö¿¡µµ ¾ø°í ÇÔ¼ö¿¡¼­µµ ¼±¾ğÇÏÁö ¾Ê¾Ò±â ¶§¹®
+	return name; // í•´ë‹¹í´ë˜ìŠ¤ì˜ ë©¤ë²„ì¸ì¤„ ì•”
+	// ë§¤ê°œë³€ìˆ˜ì—ë„ ì—†ê³  í•¨ìˆ˜ì—ì„œë„ ì„ ì–¸í•˜ì§€ ì•Šì•˜ê¸° ë•Œë¬¸
 }
 
 int Person::getAge()
@@ -47,13 +47,13 @@ void Person::setName(const string name)
 {
 	this->name = name;
 	// Person::name = name;
-	// ¾Õ name : privateÀÇ name, µÚ name : ¸Å°³º¯¼öÀÇ name
+	// ì• name : privateì˜ name, ë’¤ name : ë§¤ê°œë³€ìˆ˜ì˜ name
 }
 
 void Person::setAge(const int age)
 {
 	this->age = age;
-	// ÇØ´ç Å¬·¡½ºÀÇ age¿¡ ¸Å°³º¯¼ö¸¦ Àü´ŞÇÏ´Â ageÇÒ´ç
+	// í•´ë‹¹ í´ë˜ìŠ¤ì˜ ageì— ë§¤ê°œë³€ìˆ˜ë¥¼ ì „ë‹¬í•˜ëŠ” ageí• ë‹¹
 }
 
 void TEST(Person& p)
@@ -61,7 +61,7 @@ void TEST(Person& p)
 	cout << p.name << endl;
 	cout << p.age << endl;
 	p.setAge(23);
-	p.setName("ÀÌ»ç¶û");
+	p.setName("ì´ì‚¬ë‘");
 }
 
 int main()
