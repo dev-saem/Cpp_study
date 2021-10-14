@@ -15,7 +15,7 @@ private:
 
 CopyObj::~CopyObj()
 {
-	cout << "*** °´Ã¼ ¼Ò¸ê ***" << endl;
+	cout << "*** ê°ì²´ ì†Œë©¸ ***" << endl;
 };
 
 CopyObj::CopyObj(const double h, const double w)
@@ -28,13 +28,13 @@ CopyObj::CopyObj(const double h, const double w)
 
 void CopyObj::ShowVar()
 {
-	cout << "Å° : " << height << endl;
-	cout << "¸ö¹«°Ô : " << weight << endl;
+	cout << "í‚¤ : " << height << endl;
+	cout << "ëª¸ë¬´ê²Œ : " << weight << endl;
 }
 
 int main()
 {
-	CopyObj p1(181.5, 79.3);	// °´Ã¼ »ı¼º
+	CopyObj p1(181.5, 79.3);	// ê°ì²´ ìƒì„±
 	p1.ShowVar();
 
 	cout << "******************" << endl;
@@ -46,7 +46,7 @@ int main()
 	CopyObj* p3 = new CopyObj(189.8, 80.2);
 	p3->ShowVar();
 
-	delete(p3);	// p3 °´Ã¼ ¼Ò¸ê
+	delete(p3);	// p3 ê°ì²´ ì†Œë©¸
 
 	cout << "*****************" << endl;
 
