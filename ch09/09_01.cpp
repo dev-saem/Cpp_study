@@ -1,6 +1,6 @@
 #include "h_09_01.h"
 
-Student::Student()	// »ı¼ºÀÚ Á¤ÀÇ, ÃÊ±âÈ­ ÇØÁÜ
+Student::Student()	// ìƒì„±ì ì •ì˜, ì´ˆê¸°í™” í•´ì¤Œ
 	:sum(0), average(0.)
 {
 	score[0] = 0;
@@ -11,7 +11,7 @@ Student::Student()	// »ı¼ºÀÚ Á¤ÀÇ, ÃÊ±âÈ­ ÇØÁÜ
 	//average = 0.;
 };
 
-Student::Student(const int s1, const int s2, const int s3)	// »ı¼ºÀÚ Á¤ÀÇ
+Student::Student(const int s1, const int s2, const int s3)	// ìƒì„±ì ì •ì˜
 {
 	score[0] = s1;
 	score[1] = s2;
@@ -40,7 +40,7 @@ void Student::ShowScore()
 {
 	int i;
 	for (i = 0; i < 3; i++)
-		cout << "Á¡¼ö" << i + 1 << " : " << score[i] << endl;
-	cout << "ÃÑÁ¡ : " << sum << endl;
-	cout << "Æò±Õ : " << average << endl;
+		cout << "ì ìˆ˜" << i + 1 << " : " << score[i] << endl;
+	cout << "ì´ì  : " << sum << endl;
+	cout << "í‰ê·  : " << average << endl;
 };
